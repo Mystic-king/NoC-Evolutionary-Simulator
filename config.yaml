@@ -1,0 +1,58 @@
+application:
+  name: "NoC Evolutionary Simulator"
+  version: "1.0.0"
+  output_directory: "outputs/experiments"
+
+defaults:
+  seed: 42
+
+basic_ga:
+  chromosome_length: 5
+  population_size: 50
+  generations: 100
+  crossover_rate: 0.8
+  mutation_rate: 0.02
+  tournament_size: 3
+
+tsp:
+  cities_count: 20
+  population_size: 80
+  generations: 150
+  crossover_rate: 0.9
+  mutation_rate: 0.15
+
+noc_routing:
+  rows: 4
+  cols: 4
+  source: [0, 0]
+  destination: [3, 3]
+  population_size: 40
+  generations: 60
+  crossover_rate: 0.8
+  mutation_rate: 0.2
+  congestion_weight: 2.0
+
+cnn_routing:
+  samples: 1600
+  epochs: 8
+  batch_size: 64
+  grid_size: 8
+  learning_rate: 0.001
+
+metaheuristics:
+  dimension: 5
+  population_size: 30
+  iterations: 80
+  algorithm: "all"
+
+neuro_fuzzy:
+  samples: 350
+  epochs: 25
+  learning_rate: 0.035
+
+gem5_garnet:
+  rows: 4
+  cols: 4
+  packet_count: 30
+  traffic_pattern: "uniform"
+  timeout_seconds: 3600

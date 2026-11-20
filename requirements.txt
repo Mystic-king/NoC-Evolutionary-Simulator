@@ -1,0 +1,2 @@
+-e .
+# Optional developer tooling: pip install -e ".[dev]"
