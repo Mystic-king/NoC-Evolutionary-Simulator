@@ -48,8 +48,7 @@ and uses standard Streamlit components; no separate frontend build is required.
 git clone <your-repository-url>
 cd NoC-Evolutionary-Simulator
 
-python -m venv .venv
-
+python3.11 -m venv .venv
 # macOS / Linux
 source .venv/bin/activate
 
